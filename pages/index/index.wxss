@@ -1,0 +1,204 @@
+
+page {
+	background: rgb(255, 252, 252);
+}
+
+.swiper-image {
+	width: 100%;
+	height: 100%;
+}
+
+/*功能区*/
+.func-area {
+	display: flex;
+ 
+	flex-direction: row;
+	margin: 20rpx 0;
+	padding-top: 30rpx;
+	background: white;
+}
+
+.func-area view {
+	width: 50%;
+	text-align: center;
+}
+
+.func-area text{
+	display: block;
+	color: #333;
+	font-size: 36rpx;
+	line-height: 90rpx;
+}
+
+.func-area image {
+	width: 100rpx;
+	height: 100rpx;
+	border-radius: 20rpx;
+}
+
+.orange {
+	background: #f60;
+}
+
+.blue {
+	background: #09f;
+}
+
+/*主商品区*/
+.container-goods {
+	background: white;
+}
+
+.container-goods .caption {
+	font-size: 32rpx;
+	width: 100%;
+	line-height: 60rpx;
+	text-indent: 20rpx;
+	padding: 10rpx;
+}
+
+.main-goods {
+	border-top: 1px solid #eee;
+	background: white;
+	display: inline-block;
+}
+
+
+.tableviewcell {
+  display: flex;
+  float: right;
+	flex-direction: row;
+	border-bottom: 1rpx solid #ddd;
+	color: #666;
+	background: white;
+width: 100%；
+ 
+}
+.tableviewcellonerow {
+  margin-top: 110rpx;
+	display: flex;
+  height: 85rpx;
+	flex-direction: row;
+	border-bottom: 1rpx solid #ddd;
+	color: #666;
+	background: white;
+width: 100%；
+
+}
+
+/*icon*/
+.tableviewcellonerow image {
+   
+  margin-left: 40rpx;
+  margin-right: 30rpx;
+  	width: 550rpx;
+	height: 60rpx;
+}
+.icon_img{
+   margin-left: 40rpx;
+  margin-right: 30rpx;
+  	width: 55rpx;
+	height: 55rpx;
+}
+.left_index{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+   align-self:  center;
+  flex-wrap:nowrap;
+  
+}
+.irowindex1{
+  padding-top: 20rpx;
+	height: 90rpx;
+}
+.irowindex2{
+  padding-top: 100rpx;
+
+}
+.irowindex3{
+  padding-top: 20rpx;
+	
+}
+.right_index{
+  
+  display: flex;
+  flex-direction: row;
+  align-self:  center;
+   padding-left: 30rpx;
+  flex-wrap:nowrap;
+  
+}
+.row_two{
+  display: flex;
+	align-items: flex-end;
+  flex-wrap:nowrap;
+  
+}
+
+
+.image1{
+   display: flex;
+   margin: 10rpx;
+	align-items: flex-start;
+  flex-wrap:nowrap;
+  width: 40%；
+}
+.row_two1{
+  display: flex;
+	align-items: flex-end;
+  flex-wrap:nowrap;
+  width: 40%；
+}
+
+
+.container{
+
+padding: 1rem;
+
+font-size: 0.9rem;
+
+line-height: 1.56rem;
+
+}
+
+.row{
+
+display: flex;
+
+align-items: center;
+
+margin-bottom: 0.8rem;
+
+}
+
+.row text{
+
+flex-grow: 1;
+
+text-align: right;
+
+}
+
+.row input{
+
+font-size: 0.7rem;
+
+flex-grow: 3;
+
+border: 1px solid #0099CC;
+
+display: inline-block;
+
+border-radius: 0.3rem;
+
+box-shadow: 0 0 0.15rem #aaa;
+
+padding: 0.3rem;
+
+}
+.wxlogin{
+  color: black;
+  background: #52CF47;
+}
+@import '../../model/model.wxss'

@@ -1,0 +1,4 @@
+<talkfun-media-view
+showMeidaView="{{false}}"
+mediaUrl="{{mediaUrl}}">
+</talkfun-media-view>

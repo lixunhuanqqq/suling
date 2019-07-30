@@ -1,0 +1,9 @@
+<view class="tf-whiteboard-view" hover-class="none" hover-stop-propagation="false">
+  <view id="mod-wb" class="wb-wrap" style="background:{{whiteboardBackgroundColor}}; height:{{100 * 3 / 4 + 'vw'}}">
+    <!-- #涂鸦  -->
+    <canvas canvas-id="canvas" id="canvas" class="mod-canvas" style="transform:translateY({{translateY}});height:{{canvasHeight}}"></canvas>
+    <!-- #PPT图库 -->
+    <image wx:if="{{!isWhiteboard}}" id="ppt" class="mod-ppt" style="transform:translateY({{translateY}});" src="{{pptPath}}" mode="widthFix"></image>
+  </view>
+</view>
+  

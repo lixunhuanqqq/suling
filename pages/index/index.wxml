@@ -1,0 +1,58 @@
+<import src="../../model/model.wxml"/>
+<i-row i-class="irowindex1">
+  < i-col span="4" i-class="col-class"  bindtap="loadLocation">
+    <image class="icon_img"  src="../../images/yizhi/index/address@2x.png" />
+    </i-col>
+   
+    < i-col span="8" i-class="col-class"  bindtap="translate">
+
+      <text class="" >{{city}}{{county}}</text>
+      </i-col>
+    
+      < i-col span="4" i-class="col-class">
+        <image class="icon_img" src="../../images/yizhi/index/设置@2x.png" />
+        </i-col>
+        < i-col span="8" i-class="col-class">
+          <input class="" placeholder="搜索公司名称" />
+          </i-col>
+</i-row>
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000" style="height:450rpx;">
+  <block wx:for="{{banner}}" wx:key="">
+    <swiper-item>
+      <image src="{{item}}" mode="aspectFill" class="swiper-image" bindtap="showGoods" />
+    </swiper-item>
+  </block>
+</swiper>
+
+ <i-row i-class="irowindex3">
+  <i-col span="4" i-class="col-class">
+    <image class="icon_img" src="../../images/yizhi/index/address@2x.png" />
+  </i-col>
+  <i-col span="8" i-class="col-class">
+    <text class="">苏州宏大</text>
+  </i-col>
+  <i-col span="4" offset="8" i-class="col-class">
+    <text style="color:#411ED1;">公告</text>
+  </i-col>
+</i-row> 
+  <i-row i-class="irowindex2">
+    < i-col offset="3" span="8" i-class="col-class">
+      <i-button type="primary" bind:click="handleClick1">今日招聘</i-button>
+      </i-col>
+      < i-col span="8" i-class="col-class">
+        <i-button type="primary" bind:click="handleClick2">法务服务</i-button>
+        </i-col>
+  </i-row>
+  <!-- <i-modal id="loginmodal" title="登录" visible="{{ visible }}" 
+  bind:click="handleClick3">
+ <i-button open-type="getUserInfo"  class="primary" bind:click="doLogin" >微信登录</i-button>
+  </i-modal> -->
+  <!-- <modal> <button open-type="getUserInfo"  bind:click="doLogin" >微信登录</button>
+   </modal>  -->
+ 
+   <modal hidden="{{visible}}" title="登录" confirm-text="确定" cancel-text="取消" bindcancel="cancel"     bindconfirm="confirm" no-cancel="{{nocancel}}">
+    <button open-type="getUserInfo"class="wxlogin"  bindtap="doLogin" > <image src="../../images/yizhi/index/weixinlog.png"style="height:45rpx; width:45rpx" ></image> 微信登录</button>
+    <button open-type="" class="primary"  bind:click="" >手机登录</button>
+</modal>
+
+<template is="areaData" data="{{...item}}"/>

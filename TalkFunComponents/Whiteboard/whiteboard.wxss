@@ -1,0 +1,18 @@
+.wb-wrap {
+  background: #e1e1e1;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+.mod-ppt {
+  width: 100%;
+  display: block;
+  margin: auto;
+}
+.mod-canvas {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 120;
+}

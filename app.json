@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/member/index/index",
+    "pages/member/evaluate/evaluate",
+    "pages/cart/cart",
+    "pages/member/donate/donate",
+    "pages/member/share/share",
+    "pages/order/list/list",
+    "pages/category/category",
+    "pages/address/add/add",
+    "pages/address/list/list",
+    "pages/goods/list/list",
+    "pages/goods/detail/detail",
+    "pages/order/checkout/checkout",
+    "pages/member/aboutus/aboutus",
+    "pages/admin/login/login",
+    "pages/admin/dashboard/dashboard",
+    "pages/admin/order/order",
+    "pages/order/payment/payment",
+    "pages/address/pickadd/pickadd",
+    "pages/address/modelTest/modelTest",
+    "pages/addindex/addindex",
+    "pages/live/detail/detail"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#358FE3",
+    "navigationBarTitleText": "苏领",
+    "navigationBarTextStyle": "white"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于获取定位"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#F5FAFA",
+    "color": "#181A1A",
+    "backgroundColor": "#358FE3",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/yizhi/index/首页黑@2x.png",
+        "selectedIconPath": "images/yizhi/index/zhiyuanshouye10复制@2x.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/live/detail/detail",
+        "iconPath": "images/yizhi/index/zhibohuifang@2x.png",
+        "selectedIconPath": "images/yizhi/index/直播白@2x.png",
+        "text": "直播招聘",
+        "color": "#358FE3"
+      },
+      {
+        "pagePath": "pages/member/index/index",
+        "iconPath": "images/yizhi/index/wode-2@2x.png",
+        "selectedIconPath": "images/yizhi/index/我的白@2x.png",
+        "text": "我"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

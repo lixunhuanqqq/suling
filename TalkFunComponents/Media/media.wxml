@@ -1,0 +1,18 @@
+<!-- # 媒体组件 -->
+<view class="tf-media-view" hover-class="none" hover-stop-propagation="false">
+  <view class="section-media" style="top: 0px; width: 200px; height: {{200 * 0.75}}px;display:{{showMeidaView ? 'block': 'none'}};">
+    <!-- # 需要支持 `<live-player>` -->
+    <live-player
+      id="tf-video-player" 
+      autoplay="true"
+      mode="live"
+      min-cache="1"
+      max-cache="1"
+      class="x-player" 
+      src="{{mediaUrl.rtmp}}"
+    ></live-player>
+    <!-- #video可以用于回放视频 -->
+    <!-- <video wx:if="{{flvShow}}" id="tf-video-player-flv" autoplay class="x-player" src="{{mediaUrl.flv}}"></video> -->
+    </view>
+</view>
+  
