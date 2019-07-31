@@ -1,4 +1,37 @@
-<talkfun-media-view
-showMeidaView="{{false}}"
-mediaUrl="{{mediaUrl}}">
-</talkfun-media-view>
+<!--index.wxml-->
+<view class="talkfun-warpper">
+  <h1 id="vtitle">{{isLive ? '正在直播...' : '未上课'}}({{title}})</h1>
+  <wxs module="tools" src="./filter.wxs"></wxs>
+  <h1>{{motto}}</h1>
+  <!-- #画板模块 -->
+  <!-- <h2>画板模块</h2>
+  <talkfun-whiteboard-view 
+    HTSDK="{{HTSDK}}"
+    whiteboardBackgroundColor="{{whiteboardBackgroundColor}}"
+    translateY="{{translateY}}"
+    canvasHeight="{{canvasHeight}}"
+    isWhiteboard="{{isWhiteboard}}"
+    pptPath="{{pptPath}}"
+    bind:whiteboardReay="canvasReady"
+    > 
+  </talkfun-whiteboard-view>-->
+  <!-- #播放模块 -->
+  <h2>视频模块</h2>
+  <talkfun-media-view
+    showMeidaView="{{showMeidaView}}"
+    mediaUrl="{{mediaUrl}}"
+  ></talkfun-media-view>
+  <!-- #聊天 -->
+  <h2>聊天模块</h2>
+  <view class="mod-chat-list">
+    <!-- 列表 -->
+    <ul class="chat-inner">
+      <li wx:for="{{chatList}}" wx:key="{{item.xid}}">{{item.nickname}} [{{item.role}}] <em class="msg-it">{{item.msg}}</em> ({{tools.getTime(item.time)}})</li>
+    </ul>
+    <!-- #发送 -->
+    <view class="chat-sender">
+      <input bindinput="bindChatIpt" value="{{chatMsg}}" type="text" class="chat-mode"/>
+      <button class="submit-chat" bindtap="emitChat">发送</button>
+    </view>
+  </view>
+</view>

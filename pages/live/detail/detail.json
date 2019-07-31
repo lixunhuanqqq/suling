@@ -1,6 +1,6 @@
 {
   "usingComponents": {
-    "talkfun-media-view": "root/TalkFunComponents/Media/media",
-    "talkfun-whiteboard-view": "root/TalkFunComponents/Whiteboard/whiteboard"
+    "talkfun-media-view": "../../../TalkFunComponents/Media/media",
+    "talkfun-whiteboard-view": "../../../TalkFunComponents/Whiteboard/whiteboard"
   }
 }

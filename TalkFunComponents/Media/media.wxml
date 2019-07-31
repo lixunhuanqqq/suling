@@ -1,6 +1,6 @@
 <!-- # 媒体组件 -->
 <view class="tf-media-view" hover-class="none" hover-stop-propagation="false">
-  <view class="section-media" style="top: 0px; width: 200px; height: {{200 * 0.75}}px;display:{{showMeidaView ? 'block': 'none'}};">
+  <view class="section-media" style="top: 0rpx; width: 200rpx; height: {{200 * 0.75}}rpx;display:{{showMeidaView ? 'block': 'none'}};">
     <!-- # 需要支持 `<live-player>` -->
     <live-player
       id="tf-video-player" 

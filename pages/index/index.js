@@ -14,7 +14,7 @@ Page({
     canIUseSession: true,
     banner: ["http://a2.qpic.cn/psb?/V13Cv6dH1mNSxp/OSnDm8KC.vPexXLyX9zVWqbJCL8k8Pgxg3Mf3cqpwPw!/b/dMUAAAAAAAAA&ek=1&kp=1&pt=0&bo=7gIiAQAAAAADJ80!&tl=1&vuin=823112883&tm=1563411600&sce=60-2-2&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1mNSxp/yt90sf53YgR3xUhTkIKyKAUEJh1heQufommvxoEIYOU!/b/dL4AAAAAAAAA&bo=7gIiAQAAAAADJ80!&rf=viewer_4"],
     visible: true,
-
+    //addd
     goods: [],
     city: "获取地址",
     county: "",

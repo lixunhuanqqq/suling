@@ -1,40 +1,74 @@
-
-var SDK = require('../../../sdkPack/wx_SDK-1.0')['default']
-
-/**
-* @ 初始化SDK 参数配置如下:
-* {
-*  @accessToken access_token => 密钥
-*  @videoContextId => 视频ID
-*  @whiteboardContextId => 画布ID
-* }
-*/
-var token = '${access_token}' // 通过接口请求返回 access_token
-var options = {
-  accessToken: token,
-  videoContextId: 'tf-video-player',
-  whiteboardContextId: 'canvas'
-}
-var HTSDK = new SDK(options, (initData) => {
-  console.log('TalkFun SDK init success!')
-  this.initCall(initData)
-  callback && callback(this.HTSDK)
-})
+const app = getApp()
+var sdkCaller = require('./sdk.cmd')
+var utils = require('../../../utils/util')
 // pages/live/detail/detail.js
 Page({
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    mediaUrl:"http://open.talk-fun.com/live/loginCourse.php?id=15904&sign=c5befc5ac0fd6ad358c82dd534d542c9"
+    motto: '欢迎使用TalkFun小程序',
+    HTSDK: null,
+    // 直播
+    isLive: false,
+    title: '',
+    // 画板
+    whiteboardBackgroundColor: null,
+    translateY: 0,
+    isWhiteboard: false,
+    canvasHeight: 0,
+    // 课件图片
+    pptPath: null,
+    // 媒体
+    showMeidaView: false,
+    mediaUrl: null,
+    // 聊天列表
+    chatList: [],
+    chatMsg: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  // 初始化加载 SDK => 绑定状态
+  onLoad: function () {
+    console.log('loaded')
+    sdkCaller.init(this, (HTSDK) => {
+      this.HTSDK = HTSDK
+      this.HTSDK.setCanvas(this.ctx)
+    })
+  },
+  // 设置canvas ctx
+  canvasReady: function (e) {
+    console.log('canvas ready!')
+    this.ctx = e.detail.ctx
+    if (this.HTSDK) {
+      this.HTSDK.setCanvas(e.detail.ctx)
+    }
+  },
+  // 聊天信息
+  bindChatIpt: function (e) {
+    this.setData({
+      chatMsg: e.detail.value
+    })
+  },
+  // 发送聊天
+  emitChat() {
+    this.HTSDK.emit('chat:send', { msg: this.data.chatMsg }, (chat) => {
+      // 放送成功
+      if (chat.code == 0) {
+        this.data.chatList.push(chat.data)
+        this.setData({
+          chatList: this.data.chatList
+        })
+        this.setData({
+          chatMsg: ''
+        })
+      }
+      // 发送失败
+      else {
+        wx.showToast({
+          title: chat.msg,
+          icon: 'none',
+          duration: 1500,
+          mask: false
+        });
+      }
+    })
   },
 
   /**
@@ -85,4 +119,6 @@ Page({
   onShareAppMessage: function () {
 
   }
-})
+});
+
+

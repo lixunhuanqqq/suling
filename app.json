@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/live/detail/detail",
     "pages/member/index/index",
     "pages/member/evaluate/evaluate",
     "pages/cart/cart",
@@ -20,8 +21,8 @@
     "pages/order/payment/payment",
     "pages/address/pickadd/pickadd",
     "pages/address/modelTest/modelTest",
-    "pages/addindex/addindex",
-    "pages/live/detail/detail"
+    "pages/addindex/addindex"
+    
   ],
   "window": {
     "navigationBarBackgroundColor": "#358FE3",

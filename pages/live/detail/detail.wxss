@@ -1,1 +1,61 @@
-/* pages/live/detail/detail.wxss */
+/* pages/live/detail/detail.wxss *//**index.wxss**/
+h1, h2 {
+  padding: 10rpx;
+  display: block;
+  color: #aaa;
+  font-size: 14px;
+}
+h2 {
+  margin: 20px 5px 5px;
+  color: darkolivegreen;
+  border-bottom: 1px solid #333333;
+}
+h1 {
+  color: #333333;
+  font-size: 30rpx;
+}
+
+canvas {
+  display: block;
+}
+
+.chat-inner {
+  padding: 5px;
+}
+.chat-inner ul {
+  padding: 0;
+  margin: 0;
+}
+.chat-inner li {
+  font-size: 12px;
+  display: block;
+  padding: 2px;
+}
+.chat-sender {
+  display: flex;
+  padding: 10px;
+}
+.msg-it {
+  color:#1313e3;
+}
+.chat-mode {
+  border: 1px solid #ccc;
+  padding: 5px;
+  width: 90%;
+  height: 18px;
+  min-height: auto;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 30px;
+}
+.submit-chat {
+  height: 30px;
+  min-width: 100px;
+  font-size: 12px;
+  margin-left: 5px;
+  line-height: 30px;
+}
+live-player {
+  width: 100%;
+  height: 100%;
+}
