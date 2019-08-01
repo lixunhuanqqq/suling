@@ -24,7 +24,7 @@
   </block>
 </swiper>
 
- <i-row i-class="irowindex3">
+ <!-- <i-row i-class="irowindex3">
   <i-col span="4" i-class="col-class">
     <image class="icon_img" src="../../images/yizhi/index/address@2x.png" />
   </i-col>
@@ -34,21 +34,29 @@
   <i-col span="4" offset="8" i-class="col-class">
     <text style="color:#411ED1;">公告</text>
   </i-col>
-</i-row> 
-  <i-row i-class="irowindex2">
+</i-row>  -->
+
+   <view class="gg" catchtap="ggclick">
+                               <view class="gg1">
+                                 <image src="../../images/yizhi/index/laba@2x.png"></image>
+                               </view>
+                             <view class="gg2">
+                           <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="3000"> <block wx:for="{{msgList}}"> <navigator url="/pages/index/index?title={{item.url}}" open-type="navigate">  <swiper-item>  <view class="swiper_item">{{item.title}}</view>  </swiper-item> </navigator> </block></swiper>
+           </view>
+                             <view class="gg-button" >公告</view>
+                             </view>
+  <!-- <i-row i-class="irowindex2">
     < i-col offset="3" span="8" i-class="col-class">
       <i-button type="primary" bind:click="handleClick1">今日招聘</i-button>
       </i-col>
       < i-col span="8" i-class="col-class">
         <i-button type="primary" bind:click="handleClick2">法务服务</i-button>
         </i-col>
-  </i-row>
-  <!-- <i-modal id="loginmodal" title="登录" visible="{{ visible }}" 
-  bind:click="handleClick3">
- <i-button open-type="getUserInfo"  class="primary" bind:click="doLogin" >微信登录</i-button>
-  </i-modal> -->
-  <!-- <modal> <button open-type="getUserInfo"  bind:click="doLogin" >微信登录</button>
-   </modal>  -->
+  </i-row> -->
+   <view class="userbottom">
+    <view class="userbottom-l" catchtap="gojrzp">今日招聘</view>
+     <view class="userbottom-r" catchtap="gofwfw">法务服务</view>
+  </view>
  
    <modal hidden="{{visible}}" title="登录" confirm-text="确定" cancel-text="取消" bindcancel="cancel"     bindconfirm="confirm" no-cancel="{{nocancel}}">
     <button open-type="getUserInfo"class="wxlogin"  bindtap="doLogin" > <image src="../../images/yizhi/index/weixinlog.png"style="height:45rpx; width:45rpx" ></image> 微信登录</button>

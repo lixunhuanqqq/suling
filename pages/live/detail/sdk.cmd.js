@@ -138,7 +138,7 @@ module.exports = {
      *  @whiteboardContextId 画布ID
      * }
      */
-    var token = 'YTOiFjM3ITYxUDN5IWZ3QGZ1QWMiZGZwUmYiZjM3YGN8xHf9JSO0UDMzMzX2QDNwMDOiojIl1WYuJnIsAjOiEmIs01W6Iic0RXYiwCO2IjM0UDN2UTM6ISZtlGdnVmciwiI1czMwUTOxgjI6ICZphnIsQTM0ITM6ICZpBnIsAjOiQWanJCL5QTNwMzM6ICZp9VZzJXdvNmIsIiI6IichRXY2FmIsAjOiIXZk5WZnJCL4YjMyUTN0YTNxojIlJXawhXZiwiN0QDMzgjOiQWat92byJCLiQ3clRnI6ISZtFmbrNWauJCLiIXZzVnI6ISZs9mciwiIyEDMwATMiojIklWdiwCNxQjMxojIkl2XyVmb0JXYwJye' // 通过接口请求返回token
+    var token = 'ImN1UDO1M2NyAzMjNjN1gjM4EmN5EmZxQmYhFDZ2cTZ8xHf9JSMzQTMzMzX2QDNwMDOiojIl1WYuJnIsAjOiEmIs01W6Iic0RXYiwCNwkTOyYDN2UTM6ISZtlGdnVmciwiI1czMwUTOxgjI6ICZphnIsQTM0ITM6ICZpBnIsAjOiQWanJCLxMDNxMzM6ICZp9VZzJXdvNmIsIiI6IichRXY2FmIsAjOiIXZk5WZnJCL0ATO5MjN0YTNxojIlJXawhXZiwiN0QDMzgjOiQWat92byJCLiQ3clRnI6ISZtFmbrNWauJCLiIXZzVnI6ISZs9mciwiIyEDMwATMiojIklWdiwCNxQjMxojIkl2XyVmb0JXYwJye' // 通过接口请求返回token
     var options = {
       accessToken: token,
       videoContextId: 'tf-video-player',

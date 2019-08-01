@@ -12,7 +12,7 @@ var item = {};
 Page({
   data: {
     canIUseSession: true,
-    banner: ["http://a2.qpic.cn/psb?/V13Cv6dH1mNSxp/OSnDm8KC.vPexXLyX9zVWqbJCL8k8Pgxg3Mf3cqpwPw!/b/dMUAAAAAAAAA&ek=1&kp=1&pt=0&bo=7gIiAQAAAAADJ80!&tl=1&vuin=823112883&tm=1563411600&sce=60-2-2&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1mNSxp/yt90sf53YgR3xUhTkIKyKAUEJh1heQufommvxoEIYOU!/b/dL4AAAAAAAAA&bo=7gIiAQAAAAADJ80!&rf=viewer_4"],
+    banner: ["http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/urWqqHAaxru5d7oIcAZyHPb0iQgodIsxkWnDtBUfj1Q!/b/dE0BAAAAAAAA&bo=IAMsAQAAAAARBz4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/el7r8l11ekGE5B7cVvhYRU0XGajvACkJoDaTNWryC7U!/b/dL8AAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4", "http://m.qpic.cn/psb?/V13Cv6dH1DBP2N/8ijR1ZEFDq7G2sVoLwOZ7qmnvTFkIAYX1VFIQG.mpJo!/b/dLgAAAAAAAAA&bo=IAMsAQAAAAARFy4!&rf=viewer_4"],
     visible: true,
     //mayulong
     goods: [],
@@ -24,6 +24,20 @@ Page({
     nocancel: false,
     actions: [
 
+    ],
+    msgList: [{
+      url: "url",
+      title: "易职招聘小程序正式上线啦..."
+    }, {
+      url: "url",
+      title: "苏州园区三星工厂大量招工..."
+    }, {
+      url: "url",
+      title: "苏州园区大量招聘普工.."
+    }, {
+      url: "url",
+      title: "苏州园区大量招聘普工啦啦啦啦..."
+    }
     ],
     item: {
       show: show

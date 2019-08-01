@@ -24,20 +24,24 @@
     "pages/addindex/addindex"
     
   ],
-  "window": {
-    "navigationBarBackgroundColor": "#358FE3",
-    "navigationBarTitleText": "苏领",
-    "navigationBarTextStyle": "white"
-  },
+ "window": {
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#062f8e",
+  "navigationBarTitleText": "易职招聘",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+},
   "permission": {
     "scope.userLocation": {
       "desc": "你的位置信息将用于获取定位"
     }
   },
+  
   "tabBar": {
-    "selectedColor": "#F5FAFA",
-    "color": "#181A1A",
-    "backgroundColor": "#358FE3",
+    "color": "#656565",
+    "selectedColor": "#fff",
+    "backgroundColor": "#062f8e",
+    "borderStyle": "black",
     "list": [
       {
         "pagePath": "pages/index/index",

@@ -14,13 +14,12 @@
 		"checkInvalidKey": true,
 		"checkSiteMap": true,
 		"uploadWithSourceMap": true,
-    "nodeModules": true,
+		"nodeModules": true,
 		"babelSetting": {
 			"ignore": [],
 			"disablePlugins": [],
 			"outputPath": ""
 		}
-  
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.7.7",
